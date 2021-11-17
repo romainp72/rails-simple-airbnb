@@ -1,0 +1,8 @@
+<h1>Book a flat now and get no discount (later is no discount too)</h1>
+<div>
+  <ul>
+    <% @flats.each do |flat| %>
+      <li><%= link_to flat.name, flat_path(flat) %>
+    <% end %>
+  <ul>
+</div>
