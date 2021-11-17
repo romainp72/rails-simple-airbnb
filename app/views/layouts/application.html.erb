@@ -12,6 +12,13 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light ">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Flats online</span>
+        <%= image_tag "bearbnb.png", class:'card-img-top'%>
+        <button type="button" class="btn btn-secondary">  <%= link_to "Back to flats list", flats_path, class:'link-text' %></button>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
